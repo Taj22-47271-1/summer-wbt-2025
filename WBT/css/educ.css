@@ -1,0 +1,80 @@
+
+#aiub-pic{
+    float: left;
+  
+  margin-top: -10px;
+  margin-left: 100px;
+  
+
+}
+#scr-pic{
+    float: left;
+  
+  margin-top: 40px;
+  margin-left: 100px;
+
+}
+#police-pic{
+    float: left;
+  
+  margin-top: 60px;
+  margin-left: 100px;
+
+}
+
+
+.edu{
+  margin-left: 300px;
+    color: rgb(235, 13, 13);
+    
+}
+h1{
+    text-align: center;
+    color: #e4ebf1;
+}
+.nav-box {
+  border: 3px solid red;         
+  padding: 10px;                 
+  background-color: #747779;     
+  width: fit-content;            
+  margin: 50px auto;             
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+.nav-box a {
+  text-decoration: none;
+  color: rgb(211, 38, 38);
+  background-color: #e4ebf1;
+  border: 2px solid #050505;
+  
+  padding: 10px 20px;
+  margin: 8px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.nav-box a:hover {
+  background-color: #0056b3;
+  border-color: #003f7f;
+}
+body {
+    background-image: url("../image/90dd06ebd2a40a4a165ce45095bcbb9d.jpg");
+    background-size: cover;
+
+}
+
+img:hover{
+     transform: scale(1.7);
+     border: 3px solid red;
+
+}
+img{
+        height: 200;
+        width: 450;
+        margin: 30px;
+        transition: all 1s;
+        
+    }

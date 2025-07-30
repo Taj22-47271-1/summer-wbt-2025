@@ -1,0 +1,110 @@
+
+.form-group{
+    width: 15cm;
+
+    align-items: center;
+
+    margin-bottom: 5px;
+
+}
+
+.form-group{
+
+    flex-basis: 100px;
+
+    text-align: right;
+
+    margin-right: 10px;
+
+}
+
+h2{
+
+    color: red;
+
+}
+
+#hono{
+
+    color: red;
+
+    text-align:left;
+
+}
+
+
+
+
+
+form {
+
+    width: 50%;
+
+}
+
+.nav-box {
+
+  border: 3px solid rgb(239, 237, 237);        
+
+  padding: 10px;                
+
+  background-color: #c1c3c4;  
+
+  height: 35cm;  
+
+  width: 20cm;            
+
+  margin: 50px auto;            
+
+  text-align: center;
+
+  border-radius: 10px;
+
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+
+ 
+
+}
+.star{
+    color: red;
+}
+
+
+
+body {
+
+    /* background-image: url("../img/a118d08d-0693-459b-ae86-a5400d96d16a.jpg"); */
+
+    background-size: cover;
+
+
+
+}
+
+#start{
+
+    text-align: left;
+
+}
+
+#star{
+
+    color: red;
+
+}
+
+#state{
+
+    width: 170px;
+
+   
+
+}
+
+#country{
+
+    width: 170px;
+
+}
+
+

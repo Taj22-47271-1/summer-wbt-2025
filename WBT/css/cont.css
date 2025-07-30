@@ -1,0 +1,61 @@
+h1{
+    text-align: center;
+    color: #e4ebf1;
+}
+.name{
+    text-align: center;
+    color: red;
+}
+.skill{
+    text-align: center;
+    color: red;
+}
+.job{
+    text-align: center;
+    color: red;
+
+}
+.apo{
+    text-align: center;
+    color: red;
+}
+.BATTON{
+    text-align: center;
+    color: rgb(195, 104, 59);
+}
+.APPOINTMENT TIME{
+    color: brown;
+}
+.nav-box {
+  border: 3px solid red;         
+  padding: 10px;                 
+  background-color: #747779;     
+  width: fit-content;            
+  margin: 50px auto;             
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+
+.nav-box a {
+  text-decoration: none;
+  color: rgb(211, 38, 38);
+  background-color: #e4ebf1;
+  border: 2px solid #050505;
+  
+  padding: 10px 20px;
+  margin: 8px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.nav-box a:hover {
+  background-color: #0056b3;
+  border-color: #003f7f;
+}
+body {
+    background-image: url("../image/90dd06ebd2a40a4a165ce45095bcbb9d.jpg");
+    background-size: cover;
+
+}
