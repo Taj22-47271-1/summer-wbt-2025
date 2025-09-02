@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration Form</title>
+  <link rel="stylesheet" href="../form/style.css">
+</head>
+<body>
+  <form action="../form/process.php" method="POST" enctype="multipart/form-data" class="form-container">
+    <h1>Student Registration Form</h1>
+
+    <label>Roll no. :</label>
+    <input type="text" name="roll_no" required><br>
+
+    <label>Student name :</label>
+    <input type="text" name="first_name"  required><br>
+
+    <label>Father's name :</label>
+    <input type="text" name="father_name" required><br>
+
+    <label>Date of birth :</label>
+    <input type="number" name="day" placeholder="Day" min="1" max="31" required>
+    <input type="number" name="month" placeholder="Month" min="1" max="12" required>
+    <input type="number" name="year" placeholder="Year" required><br>
+
+    <label>Mobile no. :</label>
+    <input type="text" name="country_code" value="+88" readonly>
+    <input type="text" name="mobile" required><br>
+
+    <label>Email id :</label>
+    <input type="email" name="email" required><br>
+
+    <label>Password :</label>
+    <input type="password" name="password" required><br>
+
+    <label>Gender :</label>
+    <input type="radio" name="gender" value="Male" required> Male
+    <input type="radio" name="gender" value="Female" required> Female<br>
+
+    <label>Department :</label>
+    <input type="checkbox" name="department[]" value="CSE"> CSE
+    <input type="checkbox" name="department[]" value="IT"> IT
+    <input type="checkbox" name="department[]" value="ECE"> ECE
+    <input type="checkbox" name="department[]" value="Civil"> Civil
+    <input type="checkbox" name="department[]" value="Mech"> Mech<br>
+
+    <label>Course :</label>
+    <select name="course">
+      <option value="">Select Current Course</option>
+      <option value="B.Tech">B.Tech</option>
+      <option value="M.Tech">M.Tech</option>
+      <option value="MBA">MBA</option>
+    </select><br>
+
+    <label>Student photo :</label>
+    <input type="file" name="student_photo"><br>
+
+    <label>City :</label>
+    <input type="text" name="city"><br>
+
+    <label>Address :</label>
+    <textarea name="address"></textarea><br>
+
+    <button type="submit">Register</button>
+  </form>
+</body>
+</html>
