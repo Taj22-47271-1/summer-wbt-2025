@@ -15,42 +15,43 @@
 
 <body>
 
-  <form method="GET">
+  <form action="../form/php/done.php" method="POST" enctype="multipart/form-data" class="form-container">
 
 
     <div class="form-group">
       <label for="firstName"><strong>First Name<span class="star">*</span></strong> </label>
-      <input type="text" id="firstName" name="firstName" required><br>
+      <input type="text" id="firstName" name="firstName" ><br>
 
       <label for="lastName"><strong>Last Name <span class="star">*</span></strong></label>
-      <input type="text" id="lastName" name="lastName" required><br>
+      <input type="text" id="lastName" name="lastName" >
+      <br>
 
       <label for="company"><strong>Company </strong></label>
-      <input type="text" id="company" name="company" required><br>
+      <input type="text" id="company" name="company" ><br>
 
       <label for="address1"><strong>Address 1 <span class="star">*</span></strong></label>
-      <input type="text" id="address1" name="address1" required><br>
+      <input type="text" id="address1" name="address1" ><br>
 
       <label for="address2"><strong>Address 2</strong></label>
       <input type="text" id="address2" name="address2"><br>
 
       <label for="city"><strong>City <span class="star">*</span></strong></label>
-      <input type="text" id="city" name="city" required><br>
+      <input type="text" id="city_donor" name="city_donor" ><br>
 
-      <label for="state"><strong>State <span class="star">*</span></strong></label>
-      <select id="state" name="state" required>
+      <label for="state_donor"><strong>State <span class="star">*</span></strong></label>
+      <select id="state_donor" name="state_donor" >
         <option value="">--Select--</option>
-        <option value="DHAKA">DHAKA</option>
+        <option value="Dhaka">Dhaka</option>
         <option value="Rajshahi">Rajshahi</option>
         <option value="Ctg">Ctg</option>
         <option value="Khulna">Khulna</option>
       </select><br>
 
       <label for="zipcode"><strong>Zip Code <span class="star">*</span></strong></label>
-      <input type="text" id="zipcode" name="zipcode" required><br>
+      <input type="text" id="zipcode" name="zipcode"><br>
 
       <label for="country"><strong>Country <span class="star">*</span></strong></label>
-      <select id="country" name="country" required>
+      <select id="country" name="country" >
         <option value="">--Select--</option>
         <option value="Bangladesh">Bangladesh</option>
         <option value="USA">USA</option>
@@ -59,41 +60,37 @@
       </select><br>
 
       <label for="phone"><strong>Phone <span class="star">*</span></strong></label>
-      <input type="tel" id="phone" name="phone" required><br>
+      <input type="tel" id="phone" name="phone" maxlength="11" ><br>
 
       <label for="fax"><strong>Fax</strong></label>
       <input type="text" id="fax" name="fax"><br>
 
-      <label for="email"><strong>Email <span class="star">*</span></strong></label>
-      <input type="email" id="email" name="email" required><br>
+      <label for="email_donor"><strong>Email <span class="star">*</span></strong></label>
+      <input type="email" id="email_donor" name="email_donor" ><br>
     </div>
 
     <div class="form-group">
       <strong>Donation Amount <span class="star">*</span></strong>
-      <input type="radio" id="none" name="donation" value="None" required>
+      <input type="radio" id="none" name="donation_amount" value="None" required>
       <label for="none">None</label>
-      <input type="radio" id="d50" name="donation" value="50">
+      <input type="radio" id="d50" name="donation_amount" value="50" required>
       <label for="d50">$50</label>
-      <input type="radio" id="d75" name="donation" value="75">
-      <label for="d75">$75</label>
-      <input type="radio" id="d100" name="donation" value="100">
+      <input type="radio" id="d100" name="donation_amount" value="100">
       <label for="d100">$100</label>
-      <input type="radio" id="d250" name="donation" value="250">
-      <label for="d250">$250</label>
-      <input type="radio" id="other" name="donation" value="Other">
+      <input type="radio" id="other" name="donation_amount" value="other">
       <label for="other">Other</label><br>
 
       <label for="otherAmount"><strong>Other Amount ($) </strong></label>
       <input type="text" id="otherAmount" name="otherAmount"><br>
 
       <strong>Recurring Donation</strong>
-      <input type="checkbox" id="recurring" name="recurring" required>
+      <input type="checkbox" id="recurring" name="recurring" >
       <label for="recurring">I am interested in giving on a regular basis:</label><br>
 
       <label for="monthly"><strong>Monthly Credit Card $</strong></label>
-      <input type="text" id="monthly" name="monthly" maxlength="1" size="4">
+      <input type="text" id="monthly" name="monthly" maxlength="2" size="4">
       <label for="months">For</label>
-      <input type="text" id="months" name="months" maxlength="1" size="4">Months<br>
+      <input type="text" id="months" name="months" maxlength="2" size="4">Months<br>
     </div>
 
 
@@ -110,7 +107,7 @@
       <label for="Name"><strong>Name </strong></label>
       <input type="text" id="Name" name="Name" required><br>
 
-<label for="Acknowledging Donation to"><strong>Acknowledging Donation to </strong></label>
+      <label for="Acknowledging Donation to"><strong>Acknowledging Donation to </strong></label>
       <input type="text" id="Acknowledging Donation to" name="Acknowledging Donation to" required><br>
 
 
@@ -137,53 +134,55 @@
 
     <div class="form-group">
       <p>
-  Please enter your name, company, or organization as you would like it to appear in publication:
-</p>
-<label for="name"><strong>Name:</strong></label>
-<input type="text" id="name" name="name" required><br><br>
+        Please enter your name, company, or organization as you would like it to appear in publication:
+      </p>
+      <label for="name"><strong>Name:</strong></label>
+      <input type="text" id="name" name="name" required><br><br>
 
-<input type="checkbox" id="anonymous" name="preferences" value="Anonymous">
-<label for="anonymous">I would like my gift to remain anonymous.</label><br>
+      <input type="checkbox" id="anonymous" name="preferences" value="Anonymous">
+      <label for="anonymous">I would like my gift to remain anonymous.</label><br>
 
-<input type="checkbox" id="matching-gift" name="preferences" value="Matching Gift">
-<label for="matching-gift">My employer offers a matching gift program. I will mail the matching gift form.</label><br>
+      <input type="checkbox" id="matching-gift" name="preferences" value="Matching Gift">
+      <label for="matching-gift">My employer offers a matching gift program. I will mail the matching gift
+        form.</label><br>
 
-<input type="checkbox" id="no-thank-you" name="preferences" value="No Thank You Letter">
-<label for="no-thank-you">Please save the cost of acknowledging this gift by not mailing a thank you letter.</label><br>
+      <input type="checkbox" id="no-thank-you" name="preferences" value="No Thank You Letter">
+      <label for="no-thank-you">Please save the cost of acknowledging this gift by not mailing a thank you
+        letter.</label><br>
 
 
       <strong>Comment</strong><br>
       (please type any question or feedback here)<br>
       <textarea style="width: 200px; height: 100px;" required></textarea><br>
-<p>
-      <strong>How may we contact you?</strong><br>
+      <p>
+        <strong>How may we contact you?</strong><br>
 
-<input type="checkbox" id="email" name="contact_method" value="Email">
-<label for="email">E-mail</label><br>
+        <input type="checkbox" id="email" name="contact_method" value="Email">
+        <label for="email">E-mail</label><br>
 
-<input type="checkbox" id="postal" name="contact_method" value="Postal Mail">
-<label for="postal">Postal Mail</label><br>
+        <input type="checkbox" id="postal" name="contact_method" value="Postal Mail">
+        <label for="postal">Postal Mail</label><br>
 
-<input type="checkbox" id="telephone" name="contact_method" value="Telephone">
-<label for="telephone">Telephone</label><br>
+        <input type="checkbox" id="telephone" name="contact_method" value="Telephone">
+        <label for="telephone">Telephone</label><br>
 
-<input type="checkbox" id="fax" name="contact_method" value="Fax">
-<label for="fax">Fax</label><br>
-</p>
+        <input type="checkbox" id="fax" name="contact_method" value="Fax">
+        <label for="fax">Fax</label><br>
+      </p>
 
       <p>
-  I would like to receive newsletters and information about special events by:
-</p>
+        I would like to receive newsletters and information about special events by:
+      </p>
 
-<input type="checkbox" id="email" name="info_method" value="Email">
-<label for="email">E-mail</label><br>
+      <input type="checkbox" id="email" name="info_method" value="Email">
+      <label for="email">E-mail</label><br>
 
-<input type="checkbox" id="postal" name="info_method" value="Postal Mail">
-<label for="postal">Postal mail</label><br>
+      <input type="checkbox" id="postal" name="info_method" value="Postal Mail">
+      <label for="postal">Postal mail</label><br>
 
-<input type="checkbox" id="volunteer" name="info_method" value="Volunteering">
-<label for="volunteer">I would like to receive information about volunteering opportunities</label>
-<br>
+      <input type="checkbox" id="volunteer" name="info_method" value="Volunteering">
+      <label for="volunteer">I would like to receive information about volunteering opportunities</label>
+      <br>
 
 
       <input type="reset" value="Reset">
@@ -192,7 +191,7 @@
       Donate online with confidence. You are on a secure server.
       <p>If you have any problem or questions, please contact support</p>
     </div>
-  
+
   </form>
 </body>
 
