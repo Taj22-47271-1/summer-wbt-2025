@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>xCompany – Registration</title>
+  <link rel="stylesheet" href="../task/reg.css"/>
+</head>
+<body>
+  <div class="frame">
+
+    <!-- Top bar -->
+    <header class="bar">
+      <div class="brand">
+        <span class="x">X</span><span class="c">Company</span>
+      </div>
+      <nav class="nav">
+        <a href="index.html">Home</a> |
+        <a href="login.html">Login</a> |
+        <a href="registration.html">Registration</a>
+      </nav>
+    </header>
+
+    <!-- Content -->
+    <main class="content">
+      <form class="form-box">
+        <fieldset>
+          <legend><b>REGISTRATION</b></legend>
+
+          <table class="form-table">
+            <tr>
+              <td>Name</td><td>:</td>
+              <td><input type="text" name="name" required></td>
+            </tr>
+            <tr>
+              <td>Email</td><td>:</td>
+              <td><input type="email" name="email" required></td>
+            </tr>
+            <tr>
+              <td>User Name</td><td>:</td>
+              <td><input type="text" name="username" required></td>
+            </tr>
+            <tr>
+              <td>Password</td><td>:</td>
+              <td><input type="password" name="password" required></td>
+            </tr>
+            <tr>
+              <td>Confirm Password</td><td>:</td>
+              <td><input type="password" name="cpassword" required></td>
+            </tr>
+            <tr>
+              <td>Gender</td><td>:</td>
+              <td>
+                <label><input type="radio" name="gender" value="Male"> Male</label>
+                <label><input type="radio" name="gender" value="Female"> Female</label>
+                <label><input type="radio" name="gender" value="Other"> Other</label>
+              </td>
+            </tr>
+            <tr>
+              <td>Date of Birth</td><td>:</td>
+              <td>
+                <input type="number" name="dob_d" placeholder="dd" min="1" max="31">
+                <input type="number" name="dob_m" placeholder="mm" min="1" max="12">
+                <input type="number" name="dob_y" placeholder="yyyy" min="1900" max="2099">
+                (dd/mm/yyyy)
+              </td>
+            </tr>
+            <tr>
+              <td></td><td></td>
+              <td>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+              </td>
+            </tr>
+          </table>
+        </fieldset>
+      </form>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bar footer">
+      Copyright © 2017
+    </footer>
+
+  </div>
+</body>
+</html>

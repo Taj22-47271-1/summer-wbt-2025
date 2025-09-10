@@ -1,0 +1,41 @@
+/* login box sizes */
+.login-box{
+  max-width: 520px;           /* slightly smaller than registration */
+  margin: 0 auto;
+}
+.thin{ border:0; border-top:1px solid #bdbdbd; margin:12px 0; }
+.remember{ display:inline-block; margin:6px 0 10px; }
+*{ box-sizing: border-box; }
+html,body{ margin:0; padding:0; background:#fff; }
+
+.frame{
+  max-width: 960px;
+  margin: 32px auto;
+  border: 2px solid #6b6b6b;
+  font-family: "Times New Roman", Times, serif;
+  background:#fff;
+}
+.nav{
+  margin-left:auto;   
+}
+.nav a{
+  color:#3b157e;
+  text-decoration:none;
+  margin:0 4px;
+}
+.nav a:hover{ text-decoration:underline; }
+
+.brand{ font-weight:700; font-size:24px; }
+.brand .x{ color:#1ea84a; font-weight:900; font-size:34px; margin-right:3px; }
+.content h2{ margin:0; font-size:28px; font-weight:700; }
+.footer{
+  justify-content:center;
+  border-top:2px solid #6b6b6b;
+  border-bottom:0;
+}
+.bar{
+  display:flex;
+  align-items:center;
+  padding:14px 18px;
+  border-bottom:2px solid #6b6b6b;
+}
